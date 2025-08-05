@@ -10,8 +10,9 @@ This is a Node.js + Express microservice that connects to a MongoDB database and
 
 To request movie data, your program must send a `GET` request to the following endpoint:
 
-http://<server-address>:<port>/search?q=<search-term>
-
+[http://<server-address>:<port>/search?q=<search-term>
+](http://<server-address>:<port>/search?q=<search-term>
+)
 * Replace <server-address> with the server hosting the microservice (e.g., localhost).
 
 * Replace <port> with the listening port (default is 3000).
