@@ -17,7 +17,7 @@ http://localhost:3000/search?q=YourMovieTitle
 
 ```
 const axios = require('axios');
-const query = "Children";
+const query = "Perfect";
 
 axios.get(`http://localhost:3000/search?q=${encodeURIComponent(query)}`)
   .then(response => {
@@ -34,10 +34,13 @@ The microservice responds with a JSON array of movie documents matching the titl
 ```
 [
   {
-    "_id": "64abc123...",
-    "title": "Children of Men",
-    "year": 2006,
-    "genres": ["Action", "Drama", "Sci-Fi"]
+    "title": "Perfect Days",
+    "year": 2023,
+    "runtime": 126,
+    "genres": ["Drama"],
+    "cast": ["Kōji Yakusho"],
+    "plot": "A janitor in Tokyo leads a quiet life finding perfection in small daily routines.",
+    "directors": "Wim Wenders"
   },
   ...
 ]
