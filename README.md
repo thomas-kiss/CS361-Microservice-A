@@ -18,7 +18,7 @@ http://server-address:port/search?q=search-term
 
 * Replace search-term with your desired movie title keyword(s) (movie title substring, case-insensitive).
   
-- **Example call (Node.js using Axios):**
+**Example call (Node.js using Axios):** 
 
 ```js
 const axios = require('axios');
