@@ -42,7 +42,6 @@ The microservice responds with a JSON array of movie documents matching the titl
     "plot": "A janitor in Tokyo leads a quiet life finding perfection in small daily routines.",
     "directors": "Wim Wenders"
   },
-  ...
 ]
 ```
 
