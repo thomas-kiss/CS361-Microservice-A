@@ -4,9 +4,9 @@ This is a Node.js + Express microservice that connects to a MongoDB database and
 
 ---
 
-## 📡 Communication Contract
+## Communication Contract
 
-### 🔹 Requesting Data
+### Requesting Data
 
 To request movie data, your program must send a `GET` request to the following endpoint:
 
@@ -28,7 +28,7 @@ axios.get(`http://localhost:3000/search?q=${encodeURIComponent(query)}`)
 ```
 
 
-### 🔹 Receiving Data
+### Receiving Data
 The microservice responds with a JSON array of movie documents matching the title search. Example response:
 
 ```
