@@ -44,6 +44,8 @@ Edit
   },
   ...
 ]
+```
+
 If no match: returns []
 
 If error: returns 500 with { error: "Server error" }
