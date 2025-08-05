@@ -17,8 +17,8 @@ http://localhost:3000/search?q=YourMovieTitle
 
 ```js
 const axios = require('axios');
-const query = "Perfect";
 
+const query = "Perfect";
 axios.get(`http://localhost:3000/search?q=${encodeURIComponent(query)}`)
   .then(response => {
     console.log(response.data); // array of matching movie documents
