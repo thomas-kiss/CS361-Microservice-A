@@ -25,7 +25,7 @@ axios.get(`http://localhost:3000/search?q=${encodeURIComponent(query)}`)
   })
   .catch(console.error);
 
-🔹 Receiving Data
+### 🔹 Receiving Data
 The microservice responds with a JSON array of movie documents matching the title search. Example response:
 
 json
