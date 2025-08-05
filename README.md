@@ -32,9 +32,6 @@ axios.get(`http://localhost:3000/search?q=${encodeURIComponent(query)}`)
 The microservice responds with a JSON array of movie documents matching the title search. Example response:
 
 ```
-json
-Copy
-Edit
 [
   {
     "_id": "64abc123...",
@@ -51,5 +48,5 @@ If no match: returns []
 If error: returns 500 with { error: "Server error" }
 
 If query is missing: returns 400 with { error: "Query parameter q is required" }
-```
+
 
