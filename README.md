@@ -26,7 +26,7 @@ const axios = require('axios');
 const query = "Perfect";
 axios.get(`http://localhost:3000/search?q=${encodeURIComponent(query)}`)
   .then(response => {
-    console.log(response.data); // array of matching movie documents
+    console.log(response.data);
   })
   .catch(console.error);
 
@@ -55,5 +55,12 @@ If no match: returns []
 If error: returns 500 with { error: "Server error" }
 
 If query is missing: returns 400 with { error: "Query parameter q is required" }
+
+
+### UML Sequence Diagram
+
+<img width="1488" height="2224" alt="image" src="https://github.com/user-attachments/assets/3cf89d0a-4763-4eb2-9f53-d0c04d7c7e06" />
+
+
 
 
