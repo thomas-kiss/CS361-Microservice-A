@@ -15,7 +15,7 @@ http://localhost:3000/search?q=YourMovieTitle
 - **Query parameter**: `q` (movie title substring, case-insensitive)
 - **Example call (Node.js using Axios):**
 
-```js
+```
 const axios = require('axios');
 const query = "Children";
 
@@ -25,9 +25,13 @@ axios.get(`http://localhost:3000/search?q=${encodeURIComponent(query)}`)
   })
   .catch(console.error);
 
+```
+
+
 ### 🔹 Receiving Data
 The microservice responds with a JSON array of movie documents matching the title search. Example response:
 
+```
 json
 Copy
 Edit
@@ -45,4 +49,5 @@ If no match: returns []
 If error: returns 500 with { error: "Server error" }
 
 If query is missing: returns 400 with { error: "Query parameter q is required" }
+```
 
