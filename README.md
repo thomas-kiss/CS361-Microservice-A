@@ -1,6 +1,6 @@
 # 🎬 Microservice A – Movie Search API
 
-This is a Node.js + Express microservice that connects to a MongoDB database and allows clients to search for movie titles using a REST API.
+This is a Node.js + Express microservice that connects to a MongoDB database and allows clients to search for movie titles using a simple API.
 
 ---
 
@@ -10,7 +10,13 @@ This is a Node.js + Express microservice that connects to a MongoDB database and
 
 To request movie data, your program must send a `GET` request to the following endpoint:
 
-http://localhost:3000/search?q=YourMovieTitle
+http://<server-address>:<port>/search?q=<search-term>
+
+* Replace <server-address> with the server hosting the microservice (e.g., localhost).
+
+* Replace <port> with the listening port (default is 3000).
+
+* Replace <search-term> with your desired movie title keyword(s).
 
 - **Query parameter**: `q` (movie title substring, case-insensitive)
 - **Example call (Node.js using Axios):**
